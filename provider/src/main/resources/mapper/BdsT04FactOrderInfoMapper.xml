@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.skindow.provider.mapper.BdsT04FactOrderInfoMapper">
+  <resultMap id="BaseResultMap" type="com.skindow.common.entity.provider.BdsT04FactOrderInfo">
+    <!--@mbg.generated-->
+    <id column="order_fact_key" jdbcType="BIGINT" property="orderFactKey" />
+    <id column="order_source_system" jdbcType="VARCHAR" property="orderSourceSystem" />
+    <result column="reserve_no" jdbcType="VARCHAR" property="reserveNo" />
+    <result column="product_info_key" jdbcType="BIGINT" property="productInfoKey" />
+    <result column="project_info_key" jdbcType="BIGINT" property="projectInfoKey" />
+    <result column="reserve_date_key" jdbcType="INTEGER" property="reserveDateKey" />
+    <result column="reserve_date_time" jdbcType="TIMESTAMP" property="reserveDateTime" />
+    <result column="lineup_success_date_key" jdbcType="INTEGER" property="lineupSuccessDateKey" />
+    <result column="lineup_success_time" jdbcType="TIMESTAMP" property="lineupSuccessTime" />
+    <result column="account_date_key" jdbcType="INTEGER" property="accountDateKey" />
+    <result column="account_time" jdbcType="TIMESTAMP" property="accountTime" />
+    <result column="reserve_success_date_key" jdbcType="INTEGER" property="reserveSuccessDateKey" />
+    <result column="reserve_success_time" jdbcType="TIMESTAMP" property="reserveSuccessTime" />
+    <result column="confirm_date_key" jdbcType="INTEGER" property="confirmDateKey" />
+    <result column="confirm_time" jdbcType="TIMESTAMP" property="confirmTime" />
+    <result column="cancle_date_key" jdbcType="INTEGER" property="cancleDateKey" />
+    <result column="cancle_time" jdbcType="TIMESTAMP" property="cancleTime" />
+    <result column="customer_info_key" jdbcType="BIGINT" property="customerInfoKey" />
+    <result column="employee_info_key" jdbcType="BIGINT" property="employeeInfoKey" />
+    <result column="emp_sales_organ_info_key" jdbcType="BIGINT" property="empSalesOrganInfoKey" />
+    <result column="reserve_currency_key" jdbcType="SMALLINT" property="reserveCurrencyKey" />
+    <result column="reserve_amount" jdbcType="DECIMAL" property="reserveAmount" />
+    <result column="purchase_fee_rate" jdbcType="DECIMAL" property="purchaseFeeRate" />
+    <result column="purchase_fee" jdbcType="DECIMAL" property="purchaseFee" />
+    <result column="account_money" jdbcType="DECIMAL" property="accountMoney" />
+    <result column="confirm_amount" jdbcType="DECIMAL" property="confirmAmount" />
+    <result column="comparison_benchmark" jdbcType="DECIMAL" property="comparisonBenchmark" />
+    <result column="base_currency_key" jdbcType="SMALLINT" property="baseCurrencyKey" />
+    <result column="base_cur_reserve_amount" jdbcType="DECIMAL" property="baseCurReserveAmount" />
+    <result column="base_purchase_fee" jdbcType="DECIMAL" property="basePurchaseFee" />
+    <result column="base_account_money" jdbcType="DECIMAL" property="baseAccountMoney" />
+    <result column="base_confirm_amount" jdbcType="DECIMAL" property="baseConfirmAmount" />
+    <result column="exchange_rate" jdbcType="DECIMAL" property="exchangeRate" />
+    <result column="achieve_rate" jdbcType="DECIMAL" property="achieveRate" />
+    <result column="base_achieve_amount" jdbcType="DECIMAL" property="baseAchieveAmount" />
+    <result column="subsidy_rate" jdbcType="DECIMAL" property="subsidyRate" />
+    <result column="base_subsidy_amount_rmb" jdbcType="DECIMAL" property="baseSubsidyAmountRmb" />
+    <result column="equity_rate" jdbcType="DECIMAL" property="equityRate" />
+    <result column="equity_achieve_amount" jdbcType="DECIMAL" property="equityAchieveAmount" />
+    <result column="trans_status_key" jdbcType="VARCHAR" property="transStatusKey" />
+    <result column="trans_amount_status_key" jdbcType="VARCHAR" property="transAmountStatusKey" />
+    <result column="trans_check_status_key" jdbcType="VARCHAR" property="transCheckStatusKey" />
+    <result column="insert_audit_key" jdbcType="INTEGER" property="insertAuditKey" />
+    <result column="update_audit_key" jdbcType="INTEGER" property="updateAuditKey" />
+    <result column="record_create_time" jdbcType="TIMESTAMP" property="recordCreateTime" />
+    <result column="record_update_time" jdbcType="TIMESTAMP" property="recordUpdateTime" />
+    <result column="record_status" jdbcType="TINYINT" property="recordStatus" />
+    <result column="trans_type_key" jdbcType="VARCHAR" property="transTypeKey" />
+    <result column="customer_no" jdbcType="BIGINT" property="customerNo" />
+    <result column="emp_code" jdbcType="VARCHAR" property="empCode" />
+    <result column="qy_ta_fundcode" jdbcType="VARCHAR" property="qyTaFundcode" />
+    <result column="qy_status" jdbcType="BOOLEAN" property="qyStatus" />
+    <result column="sale_model" jdbcType="BOOLEAN" property="saleModel" />
+    <result column="dj_fund_code" jdbcType="VARCHAR" property="djFundCode" />
+    <result column="no_deal_flag" jdbcType="TINYINT" property="noDealFlag" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    order_fact_key, order_source_system, reserve_no, product_info_key, project_info_key, 
+    reserve_date_key, reserve_date_time, lineup_success_date_key, lineup_success_time, 
+    account_date_key, account_time, reserve_success_date_key, reserve_success_time, confirm_date_key, 
+    confirm_time, cancle_date_key, cancle_time, customer_info_key, employee_info_key, 
+    emp_sales_organ_info_key, reserve_currency_key, reserve_amount, purchase_fee_rate, 
+    purchase_fee, account_money, confirm_amount, comparison_benchmark, base_currency_key, 
+    base_cur_reserve_amount, base_purchase_fee, base_account_money, base_confirm_amount, 
+    exchange_rate, achieve_rate, base_achieve_amount, subsidy_rate, base_subsidy_amount_rmb, 
+    equity_rate, equity_achieve_amount, trans_status_key, trans_amount_status_key, trans_check_status_key, 
+    insert_audit_key, update_audit_key, record_create_time, record_update_time, record_status, 
+    trans_type_key, customer_no, emp_code, qy_ta_fundcode, qy_status, sale_model, dj_fund_code, 
+    no_deal_flag
+  </sql>
+</mapper>

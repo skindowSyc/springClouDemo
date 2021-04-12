@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.skindow.provider.mapper.BdsExpectedDueCustomerMapper">
+  <resultMap id="BaseResultMap" type="com.skindow.common.entity.provider.BdsExpectedDueCustomer">
+    <!--@mbg.generated-->
+    <!--@Table orange.bds_expected_due_customer-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="data_date" jdbcType="TIMESTAMP" property="dataDate" />
+    <result column="customer_no" jdbcType="BIGINT" property="customerNo" />
+    <result column="cust_name" jdbcType="VARCHAR" property="custName" />
+    <result column="cust_type" jdbcType="VARCHAR" property="custType" />
+    <result column="maturity_amount" jdbcType="DECIMAL" property="maturityAmount" />
+    <result column="confirm_date_time" jdbcType="TIMESTAMP" property="confirmDateTime" />
+    <result column="project_code" jdbcType="VARCHAR" property="projectCode" />
+    <result column="project_name" jdbcType="VARCHAR" property="projectName" />
+    <result column="invest_direction" jdbcType="VARCHAR" property="investDirection" />
+    <result column="project_establish_date" jdbcType="TIMESTAMP" property="projectEstablishDate" />
+    <result column="project_end_date" jdbcType="TIMESTAMP" property="projectEndDate" />
+    <result column="employee_code" jdbcType="VARCHAR" property="employeeCode" />
+    <result column="employee_name" jdbcType="VARCHAR" property="employeeName" />
+    <result column="enable_state" jdbcType="VARCHAR" property="enableState" />
+    <result column="employee_code_onjob" jdbcType="VARCHAR" property="employeeCodeOnjob" />
+    <result column="employee_name_onjob" jdbcType="VARCHAR" property="employeeNameOnjob" />
+    <result column="acc_level1_dept_name" jdbcType="VARCHAR" property="accLevel1DeptName" />
+    <result column="acc_level2_dept_name" jdbcType="VARCHAR" property="accLevel2DeptName" />
+    <result column="acc_level3_dept_name" jdbcType="VARCHAR" property="accLevel3DeptName" />
+    <result column="acc_dept_city" jdbcType="VARCHAR" property="accDeptCity" />
+    <result column="data_source" jdbcType="VARCHAR" property="dataSource" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="record_status" jdbcType="TINYINT" property="recordStatus" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, data_date, customer_no, cust_name, cust_type, maturity_amount, confirm_date_time, 
+    project_code, project_name, invest_direction, project_establish_date, project_end_date, 
+    employee_code, employee_name, enable_state, employee_code_onjob, employee_name_onjob, 
+    acc_level1_dept_name, acc_level2_dept_name, acc_level3_dept_name, acc_dept_city, 
+    data_source, create_time, update_time, record_status
+  </sql>
+</mapper>

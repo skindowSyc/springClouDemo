@@ -1,0 +1,58 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: nacos-provider
+  profiles:
+    active: dev
+
+  cloud:
+    alibaba:
+      seata:
+        tx-service-group: prex_tx_group
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848 #注册中心地址
+      config:
+        server-addr: 127.0.0.1:8848
+  datasource:
+    username: root
+    password: 1194169073
+    url: jdbc:mysql://localhost:3306/skindow?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC&allowMultiQueries=true
+    driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    host: 127.0.0.1
+    password:
+    port: 6379
+    database: 0
+    timeout: 60s  # 数据库连接超时时间，2.0 中该参数的类型为Duration，这里在配置的时候需要指明单位
+    # 连接池配置，2.0中直接使用jedis或者lettuce配置连接池
+    lettuce:
+      pool:
+        # 最大空闲连接数
+        max-idle: 500
+        # 最小空闲连接数
+        min-idle: 50
+        # 等待可用连接的最大时间，负数为不限制
+        max-wait: -1
+        # 最大活跃连接数，负数为不限制
+        max-active: -1
+
+
+mybatis-plus:
+  type-aliases-package: com.skindow.common.entity.provider
+  mapper-locations:
+    - classpath:mapper/**.xml
+
+#showSql
+logging:
+  level:
+    com:
+      example:
+        mapper : info
+server:
+  port: 8093
+
+## seata开关
+seata:
+  enabled: false

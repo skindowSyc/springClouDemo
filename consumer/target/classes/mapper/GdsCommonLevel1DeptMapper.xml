@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.skindow.consumer.mapper.GdsCommonLevel1DeptMapper">
+  <resultMap id="BaseResultMap" type="com.skindow.common.entity.consumer.GdsCommonLevel1Dept">
+    <!--@mbg.generated-->
+    <!--@Table orange.gds_common_level1_dept-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="data_date" jdbcType="TIMESTAMP" property="dataDate" />
+    <result column="maturity_month" jdbcType="DATE" property="maturityMonth" />
+    <result column="acc_level1_dept_name" jdbcType="VARCHAR" property="accLevel1DeptName" />
+    <result column="maturity_cust_discount" jdbcType="BIGINT" property="maturityCustDiscount" />
+    <result column="renew_cust_discount" jdbcType="BIGINT" property="renewCustDiscount" />
+    <result column="cust_rate" jdbcType="BIGINT" property="custRate" />
+    <result column="maturity_amount_sum" jdbcType="BIGINT" property="maturityAmountSum" />
+    <result column="renew_amount_sum" jdbcType="DECIMAL" property="renewAmountSum" />
+    <result column="amount_rate" jdbcType="BIGINT" property="amountRate" />
+    <result column="per_maturity_cust_discount" jdbcType="BIGINT" property="perMaturityCustDiscount" />
+    <result column="per_renew_cust_discount" jdbcType="BIGINT" property="perRenewCustDiscount" />
+    <result column="per_cust_rate" jdbcType="BIGINT" property="perCustRate" />
+    <result column="per_maturity_cust_sum" jdbcType="BIGINT" property="perMaturityCustSum" />
+    <result column="per_renew_cust_dis_sum" jdbcType="BIGINT" property="perRenewCustDisSum" />
+    <result column="per_amount_rate" jdbcType="BIGINT" property="perAmountRate" />
+    <result column="company_maturity_cust_discount" jdbcType="BIGINT" property="companyMaturityCustDiscount" />
+    <result column="company_renew_cust_discount" jdbcType="BIGINT" property="companyRenewCustDiscount" />
+    <result column="company_cust_rate" jdbcType="BIGINT" property="companyCustRate" />
+    <result column="company_maturity_amount_sum" jdbcType="BIGINT" property="companyMaturityAmountSum" />
+    <result column="company_renew_amount_sum" jdbcType="BIGINT" property="companyRenewAmountSum" />
+    <result column="company_amount_rate" jdbcType="BIGINT" property="companyAmountRate" />
+    <result column="product_maturity_cust_discount" jdbcType="BIGINT" property="productMaturityCustDiscount" />
+    <result column="product_renew_cust_discount" jdbcType="BIGINT" property="productRenewCustDiscount" />
+    <result column="product_cust_rate" jdbcType="BIGINT" property="productCustRate" />
+    <result column="product_maturity_amount_sum" jdbcType="BIGINT" property="productMaturityAmountSum" />
+    <result column="product_renew_amount_sum" jdbcType="BIGINT" property="productRenewAmountSum" />
+    <result column="product_amount_rate" jdbcType="BIGINT" property="productAmountRate" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="record_status" jdbcType="TINYINT" property="recordStatus" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, data_date, maturity_month, acc_level1_dept_name, maturity_cust_discount, renew_cust_discount, 
+    cust_rate, maturity_amount_sum, renew_amount_sum, amount_rate, per_maturity_cust_discount, 
+    per_renew_cust_discount, per_cust_rate, per_maturity_cust_sum, per_renew_cust_dis_sum, 
+    per_amount_rate, company_maturity_cust_discount, company_renew_cust_discount, company_cust_rate, 
+    company_maturity_amount_sum, company_renew_amount_sum, company_amount_rate, product_maturity_cust_discount, 
+    product_renew_cust_discount, product_cust_rate, product_maturity_amount_sum, product_renew_amount_sum, 
+    product_amount_rate, create_time, update_time, record_status
+  </sql>
+</mapper>

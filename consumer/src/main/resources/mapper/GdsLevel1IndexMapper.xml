@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.skindow.consumer.mapper.GdsLevel1IndexMapper">
+  <resultMap id="BaseResultMap" type="com.skindow.common.entity.consumer.GdsLevel1Index">
+    <!--@mbg.generated-->
+    <!--@Table orange.gds_level1_index-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="dt" jdbcType="INTEGER" property="dt" />
+    <result column="acc_level1_dept_name" jdbcType="VARCHAR" property="accLevel1DeptName" />
+    <result column="check_num" jdbcType="INTEGER" property="checkNum" />
+    <result column="achieved_num" jdbcType="INTEGER" property="achievedNum" />
+    <result column="delivery_rate" jdbcType="DECIMAL" property="deliveryRate" />
+    <result column="1-6mo_check_num" jdbcType="INTEGER" property="16moCheckNum" />
+    <result column="1-6mo_achieved_num" jdbcType="INTEGER" property="16moAchievedNum" />
+    <result column="1-6mo_delivery_rate" jdbcType="DECIMAL" property="16moDeliveryRate" />
+    <result column="7-12mo_check_num" jdbcType="INTEGER" property="712moCheckNum" />
+    <result column="7-12mo_achieved_num" jdbcType="INTEGER" property="712moAchievedNum" />
+    <result column="7-12mo_delivery_rate" jdbcType="DECIMAL" property="712moDeliveryRate" />
+    <result column="13-18mo_check_num" jdbcType="INTEGER" property="1318moCheckNum" />
+    <result column="13-18mo_achieved_num" jdbcType="INTEGER" property="1318moAchievedNum" />
+    <result column="13-18mo_delivery_rate" jdbcType="DECIMAL" property="1318moDeliveryRate" />
+    <result column="19-24mo_check_num" jdbcType="INTEGER" property="1924moCheckNum" />
+    <result column="19-24mo_achieved_num" jdbcType="INTEGER" property="1924moAchievedNum" />
+    <result column="19-24mo_delivery_rate" jdbcType="DECIMAL" property="1924moDeliveryRate" />
+    <result column="25-36mo_check_num" jdbcType="INTEGER" property="2536moCheckNum" />
+    <result column="25-36mo_achieved_num" jdbcType="INTEGER" property="2536moAchievedNum" />
+    <result column="25-36mo_delivery_rate" jdbcType="DECIMAL" property="2536moDeliveryRate" />
+    <result column="37-60mo_check_num" jdbcType="INTEGER" property="3760moCheckNum" />
+    <result column="37-60mo_achieved_num" jdbcType="INTEGER" property="3760moAchievedNum" />
+    <result column="37-60mo_delivery_rate" jdbcType="DECIMAL" property="3760moDeliveryRate" />
+    <result column="60mo_up_check_num" jdbcType="INTEGER" property="60moUpCheckNum" />
+    <result column="60mo_qup_achieved_num" jdbcType="INTEGER" property="60moQupAchievedNum" />
+    <result column="60mo_up_delivery_rate" jdbcType="DECIMAL" property="60moUpDeliveryRate" />
+    <result column="new_emp_num" jdbcType="INTEGER" property="newEmpNum" />
+    <result column="new_emp_achieved_num" jdbcType="INTEGER" property="newEmpAchievedNum" />
+    <result column="new_emp_Delivery rate" jdbcType="DECIMAL" property="newEmpDeliveryRate" />
+    <result column="1-3mo_new_emp_num" jdbcType="INTEGER" property="13moNewEmpNum" />
+    <result column="1-3mo_new_emp_achieved_num" jdbcType="INTEGER" property="13moNewEmpAchievedNum" />
+    <result column="1-3mo_new_emp_delivery_rate" jdbcType="DECIMAL" property="13moNewEmpDeliveryRate" />
+    <result column="4-6mo_new_emp_num" jdbcType="INTEGER" property="46moNewEmpNum" />
+    <result column="4-6mo_new_emp_achieved_num" jdbcType="INTEGER" property="46moNewEmpAchievedNum" />
+    <result column="4-6mo_new_emp_delivery_rate" jdbcType="DECIMAL" property="46moNewEmpDeliveryRate" />
+    <result column="7-9mo_new_emp_num" jdbcType="INTEGER" property="79moNewEmpNum" />
+    <result column="7-9mo_new_emp_achieved_num" jdbcType="INTEGER" property="79moNewEmpAchievedNum" />
+    <result column="7-9mo_new_emp_delivery_rate" jdbcType="DECIMAL" property="79moNewEmpDeliveryRate" />
+    <result column="10-12mo_new_emp_num" jdbcType="INTEGER" property="1012moNewEmpNum" />
+    <result column="10-12mo_new_emp_achieved_num" jdbcType="INTEGER" property="1012moNewEmpAchievedNum" />
+    <result column="10-12mo_new_emp_delivery_rate" jdbcType="DECIMAL" property="1012moNewEmpDeliveryRate" />
+    <result column="age_goal_achieved_num" jdbcType="INTEGER" property="ageGoalAchievedNum" />
+    <result column="age_goal_rate" jdbcType="DECIMAL" property="ageGoalRate" />
+    <result column="1-12mo_age_goal_achieved_num" jdbcType="INTEGER" property="112moAgeGoalAchievedNum" />
+    <result column="1-12mo_age_goal_rate" jdbcType="DECIMAL" property="112moAgeGoalRate" />
+    <result column="13-24mo_age_goal_achieved_num" jdbcType="INTEGER" property="1324moAgeGoalAchievedNum" />
+    <result column="13-24mo_age_goal_rate" jdbcType="DECIMAL" property="1324moAgeGoalRate" />
+    <result column="25-36mo_age_goal_achieved_num" jdbcType="INTEGER" property="2536moAgeGoalAchievedNum" />
+    <result column="25-36mo_age_goal_rate" jdbcType="DECIMAL" property="2536moAgeGoalRate" />
+    <result column="37-60mo_age_goal_achieved_num" jdbcType="INTEGER" property="3760moAgeGoalAchievedNum" />
+    <result column="37-60mo_age_goal_rate" jdbcType="DECIMAL" property="3760moAgeGoalRate" />
+    <result column="60mo_up_age_goal_achieved_num" jdbcType="INTEGER" property="60moUpAgeGoalAchievedNum" />
+    <result column="60mo_up_age_goal_rate" jdbcType="DECIMAL" property="60moUpAgeGoalRate" />
+    <result column="manage_emp_check_num" jdbcType="INTEGER" property="manageEmpCheckNum" />
+    <result column="manage_emp_achieved_num" jdbcType="INTEGER" property="manageEmpAchievedNum" />
+    <result column="manage_emp_age_goal_rate" jdbcType="DECIMAL" property="manageEmpAgeGoalRate" />
+    <result column="elite_emp_achieved_num" jdbcType="INTEGER" property="eliteEmpAchievedNum" />
+    <result column="elite_emp_rate" jdbcType="DECIMAL" property="eliteEmpRate" />
+    <result column="tail_emp_achieved_num" jdbcType="INTEGER" property="tailEmpAchievedNum" />
+    <result column="tail_emp_rate" jdbcType="DECIMAL" property="tailEmpRate" />
+    <result column="mass_emp_achieved_num" jdbcType="INTEGER" property="massEmpAchievedNum" />
+    <result column="mass_emp_rate" jdbcType="DECIMAL" property="massEmpRate" />
+    <result column="manage_emp_cadres_achieved_num" jdbcType="INTEGER" property="manageEmpCadresAchievedNum" />
+    <result column="manage_emp_cadres_rate" jdbcType="DECIMAL" property="manageEmpCadresRate" />
+    <result column="pri_achieved_num" jdbcType="INTEGER" property="priAchievedNum" />
+    <result column="pri_delivery_rate" jdbcType="DECIMAL" property="priDeliveryRate" />
+    <result column="pub_achieved_num" jdbcType="INTEGER" property="pubAchievedNum" />
+    <result column="pub_delivery_rate" jdbcType="DECIMAL" property="pubDeliveryRate" />
+    <result column="ins_achieved_num" jdbcType="INTEGER" property="insAchievedNum" />
+    <result column="ins_delivery_rate" jdbcType="DECIMAL" property="insDeliveryRate" />
+    <result column="policy_amount_achieved_num" jdbcType="INTEGER" property="policyAmountAchievedNum" />
+    <result column="policy_amount_delivery_rate" jdbcType="DECIMAL" property="policyAmountDeliveryRate" />
+    <result column="equity_achieve_num" jdbcType="INTEGER" property="equityAchieveNum" />
+    <result column="equity_delivery_rate" jdbcType="DECIMAL" property="equityDeliveryRate" />
+    <result column="pri_equity_achieve_num" jdbcType="INTEGER" property="priEquityAchieveNum" />
+    <result column="pri_equity_delivery_rate" jdbcType="DECIMAL" property="priEquityDeliveryRate" />
+    <result column="jjs_achieve_num" jdbcType="INTEGER" property="jjsAchieveNum" />
+    <result column="jjs_delivery_rate" jdbcType="DECIMAL" property="jjsDeliveryRate" />
+    <result column="ljjs_achieve_num" jdbcType="INTEGER" property="ljjsAchieveNum" />
+    <result column="ljjs_delivery_rate" jdbcType="DECIMAL" property="ljjsDeliveryRate" />
+    <result column="policy_part_num" jdbcType="INTEGER" property="policyPartNum" />
+    <result column="policy_part_rate" jdbcType="DECIMAL" property="policyPartRate" />
+    <result column="pub_part_num" jdbcType="INTEGER" property="pubPartNum" />
+    <result column="pub_part_rate" jdbcType="DECIMAL" property="pubPartRate" />
+    <result column="marketing_emp_front" jdbcType="INTEGER" property="marketingEmpFront" />
+    <result column="marketing_emp_background" jdbcType="INTEGER" property="marketingEmpBackground" />
+    <result column="marketing_emp_mid" jdbcType="INTEGER" property="marketingEmpMid" />
+    <result column="marketing_emp" jdbcType="INTEGER" property="marketingEmp" />
+    <result column="marketing_new_emp_year" jdbcType="INTEGER" property="marketingNewEmpYear" />
+    <result column="marketing_new_emp_mon" jdbcType="INTEGER" property="marketingNewEmpMon" />
+    <result column="marketing_new_emp_week" jdbcType="INTEGER" property="marketingNewEmpWeek" />
+    <result column="marketing_sep_emp_year" jdbcType="INTEGER" property="marketingSepEmpYear" />
+    <result column="marketing_sep_emp_mon" jdbcType="INTEGER" property="marketingSepEmpMon" />
+    <result column="marketing_sep_emp_week" jdbcType="INTEGER" property="marketingSepEmpWeek" />
+    <result column="marketing_net_inc_emp_year" jdbcType="INTEGER" property="marketingNetIncEmpYear" />
+    <result column="marketing_net_inc_emp_mon" jdbcType="INTEGER" property="marketingNetIncEmpMon" />
+    <result column="marketing_new_emp_ord" jdbcType="INTEGER" property="marketingNewEmpOrd" />
+    <result column="marketing_new_emp_A" jdbcType="INTEGER" property="marketingNewEmpA" />
+    <result column="marketing_new_emp_B" jdbcType="INTEGER" property="marketingNewEmpB" />
+    <result column="marketing_new_emp_C" jdbcType="INTEGER" property="marketingNewEmpC" />
+    <result column="marketing_new_emp_S" jdbcType="INTEGER" property="marketingNewEmpS" />
+    <result column="marketing_new_emp_sis" jdbcType="INTEGER" property="marketingNewEmpSis" />
+    <result column="marketing_new_emp_team" jdbcType="INTEGER" property="marketingNewEmpTeam" />
+    <result column="marketing_new_emp_depart" jdbcType="INTEGER" property="marketingNewEmpDepart" />
+    <result column="marketing_new_emp_" jdbcType="INTEGER" property="marketingNewEmp" />
+    <result column="trans_num_mon" jdbcType="INTEGER" property="transNumMon" />
+    <result column="pri_trans_num_mon" jdbcType="INTEGER" property="priTransNumMon" />
+    <result column="pub_trans_num_mon" jdbcType="INTEGER" property="pubTransNumMon" />
+    <result column="issue_amount_per_emp/mon" jdbcType="INTEGER" property="issueAmountPerEmpMon" />
+    <result column="policy_amount_year" jdbcType="DECIMAL" property="policyAmountYear" />
+    <result column="equity_amount_year" jdbcType="DECIMAL" property="equityAmountYear" />
+    <result column="issue_amount_year" jdbcType="DECIMAL" property="issueAmountYear" />
+    <result column="achieve_amount_year" jdbcType="DECIMAL" property="achieveAmountYear" />
+    <result column="policy_amount_aver_mon" jdbcType="DECIMAL" property="policyAmountAverMon" />
+    <result column="equity_amount_aver_mon" jdbcType="DECIMAL" property="equityAmountAverMon" />
+    <result column="issue_amount_aver_mon" jdbcType="DECIMAL" property="issueAmountAverMon" />
+    <result column="achieve_amount_aver_mon" jdbcType="DECIMAL" property="achieveAmountAverMon" />
+    <result column="policy_amount_mon" jdbcType="DECIMAL" property="policyAmountMon" />
+    <result column="equity_amount_mon" jdbcType="DECIMAL" property="equityAmountMon" />
+    <result column="issue_amount_mon" jdbcType="DECIMAL" property="issueAmountMon" />
+    <result column="achieve_amount_mon" jdbcType="DECIMAL" property="achieveAmountMon" />
+    <result column="policy_amount_aver_mon_of_day" jdbcType="DECIMAL" property="policyAmountAverMonOfDay" />
+    <result column="equity_amount_aver_mon_of_day" jdbcType="DECIMAL" property="equityAmountAverMonOfDay" />
+    <result column="issue_amount_aver_mon_of_day" jdbcType="DECIMAL" property="issueAmountAverMonOfDay" />
+    <result column="achieve_amount_aver_mon_of_day" jdbcType="DECIMAL" property="achieveAmountAverMonOfDay" />
+    <result column="policy_amount_week" jdbcType="DECIMAL" property="policyAmountWeek" />
+    <result column="equity_amount_week" jdbcType="DECIMAL" property="equityAmountWeek" />
+    <result column="issue_amount_week" jdbcType="DECIMAL" property="issueAmountWeek" />
+    <result column="achieve_amount_week" jdbcType="DECIMAL" property="achieveAmountWeek" />
+    <result column="policy_amount_aver_week" jdbcType="DECIMAL" property="policyAmountAverWeek" />
+    <result column="equity_amount_aver_week" jdbcType="DECIMAL" property="equityAmountAverWeek" />
+    <result column="issue_amount_aver_week" jdbcType="DECIMAL" property="issueAmountAverWeek" />
+    <result column="achieve_amount_aver_week" jdbcType="DECIMAL" property="achieveAmountAverWeek" />
+    <result column="pub_issue_amount_year" jdbcType="DECIMAL" property="pubIssueAmountYear" />
+    <result column="pub_cur_issue_amount_year" jdbcType="DECIMAL" property="pubCurIssueAmountYear" />
+    <result column="pub_noncur_issue_amount_year" jdbcType="DECIMAL" property="pubNoncurIssueAmountYear" />
+    <result column="pri_issue_amount_year" jdbcType="DECIMAL" property="priIssueAmountYear" />
+    <result column="credit_issue_amount_yeard" jdbcType="DECIMAL" property="creditIssueAmountYeard" />
+    <result column="securities_issue_amount_year" jdbcType="DECIMAL" property="securitiesIssueAmountYear" />
+    <result column="equity_issue_amount_year" jdbcType="DECIMAL" property="equityIssueAmountYear" />
+    <result column="overseas_issue_amount_year" jdbcType="DECIMAL" property="overseasIssueAmountYear" />
+    <result column="other_issue_amount_year" jdbcType="DECIMAL" property="otherIssueAmountYear" />
+    <result column="fixed_income_issue_amount_year" jdbcType="DECIMAL" property="fixedIncomeIssueAmountYear" />
+    <result column="cash_issue_amount_year" jdbcType="DECIMAL" property="cashIssueAmountYear" />
+    <result column="jjs_issue_amount_year" jdbcType="DECIMAL" property="jjsIssueAmountYear" />
+    <result column="foreign_trust_fund _issue_amount_year" jdbcType="DECIMAL" property="foreignTrustFundIssueAmountYear" />
+    <result column="ZRT_issue_amount_year" jdbcType="DECIMAL" property="zrtIssueAmountYear" />
+    <result column="QTT_issue_amount_year" jdbcType="DECIMAL" property="qttIssueAmountYear" />
+    <result column="pub_achieve_amount_year" jdbcType="DECIMAL" property="pubAchieveAmountYear" />
+    <result column="pub_cur_achieve_amount_year" jdbcType="DECIMAL" property="pubCurAchieveAmountYear" />
+    <result column="pub_noncur_achieve_amount_year" jdbcType="DECIMAL" property="pubNoncurAchieveAmountYear" />
+    <result column="pri_achieve_amount_year" jdbcType="DECIMAL" property="priAchieveAmountYear" />
+    <result column="credit_achieve_amount_year" jdbcType="DECIMAL" property="creditAchieveAmountYear" />
+    <result column="securities_achieve_amount_year" jdbcType="DECIMAL" property="securitiesAchieveAmountYear" />
+    <result column="equity_achieve_amount_year" jdbcType="DECIMAL" property="equityAchieveAmountYear" />
+    <result column="overseas_achieve_amount_year" jdbcType="DECIMAL" property="overseasAchieveAmountYear" />
+    <result column="other_achieve_amount_year" jdbcType="DECIMAL" property="otherAchieveAmountYear" />
+    <result column="fixed_income_achieve_amount_year" jdbcType="DECIMAL" property="fixedIncomeAchieveAmountYear" />
+    <result column="cash_achieve_amount_year" jdbcType="DECIMAL" property="cashAchieveAmountYear" />
+    <result column="jjs_achieve_amount_year" jdbcType="DECIMAL" property="jjsAchieveAmountYear" />
+    <result column="foreign_trust_fund _achieve_amount_year" jdbcType="DECIMAL" property="foreignTrustFundAchieveAmountYear" />
+    <result column="ZRT_achieve_amount_year" jdbcType="DECIMAL" property="zrtAchieveAmountYear" />
+    <result column="QTT_achieve_amount_year" jdbcType="DECIMAL" property="qttAchieveAmountYear" />
+    <result column="pub_issue_amount_mon" jdbcType="DECIMAL" property="pubIssueAmountMon" />
+    <result column="pub_cur_issue_amount_mon" jdbcType="DECIMAL" property="pubCurIssueAmountMon" />
+    <result column="pub_noncur_issue_amount_mon" jdbcType="DECIMAL" property="pubNoncurIssueAmountMon" />
+    <result column="pri_issue_amount_mon" jdbcType="DECIMAL" property="priIssueAmountMon" />
+    <result column="credit_issue_amount_mon" jdbcType="DECIMAL" property="creditIssueAmountMon" />
+    <result column="securities_issue_amount_mon" jdbcType="DECIMAL" property="securitiesIssueAmountMon" />
+    <result column="equity_issue_amount_mon" jdbcType="DECIMAL" property="equityIssueAmountMon" />
+    <result column="overseas_issue_amount_mon" jdbcType="DECIMAL" property="overseasIssueAmountMon" />
+    <result column="other_issue_amount_mon" jdbcType="DECIMAL" property="otherIssueAmountMon" />
+    <result column="fixed_income_issue_amount_mon" jdbcType="DECIMAL" property="fixedIncomeIssueAmountMon" />
+    <result column="cash_issue_amount_mon" jdbcType="DECIMAL" property="cashIssueAmountMon" />
+    <result column="jjs_issue_amount_mon" jdbcType="DECIMAL" property="jjsIssueAmountMon" />
+    <result column="foreign_trust_fund _issue_amount_mon" jdbcType="DECIMAL" property="foreignTrustFundIssueAmountMon" />
+    <result column="ZRT_issue_amount_mon" jdbcType="DECIMAL" property="zrtIssueAmountMon" />
+    <result column="QTT_issue_amount_mon" jdbcType="DECIMAL" property="qttIssueAmountMon" />
+    <result column="pub_achieve_amount_mon" jdbcType="DECIMAL" property="pubAchieveAmountMon" />
+    <result column="pub_cur_achieve_amount_mon" jdbcType="DECIMAL" property="pubCurAchieveAmountMon" />
+    <result column="pub_noncur_achieve_amount_mon" jdbcType="DECIMAL" property="pubNoncurAchieveAmountMon" />
+    <result column="pri_achieve_amount_mon" jdbcType="DECIMAL" property="priAchieveAmountMon" />
+    <result column="credit_achieve_amount_mon" jdbcType="DECIMAL" property="creditAchieveAmountMon" />
+    <result column="securities_achieve_amount_mon" jdbcType="DECIMAL" property="securitiesAchieveAmountMon" />
+    <result column="equity_achieve_amount_mon" jdbcType="DECIMAL" property="equityAchieveAmountMon" />
+    <result column="overseas_achieve_amount_mon" jdbcType="DECIMAL" property="overseasAchieveAmountMon" />
+    <result column="other_achieve_amount_mon" jdbcType="DECIMAL" property="otherAchieveAmountMon" />
+    <result column="fixed_income_achieve_amount_mon" jdbcType="DECIMAL" property="fixedIncomeAchieveAmountMon" />
+    <result column="cash_achieve_amount_mon" jdbcType="DECIMAL" property="cashAchieveAmountMon" />
+    <result column="jjs_achieve_amount_mon" jdbcType="DECIMAL" property="jjsAchieveAmountMon" />
+    <result column="foreign_trust_fund _achieve_amount_mon" jdbcType="DECIMAL" property="foreignTrustFundAchieveAmountMon" />
+    <result column="ZRT_achieve_amount_mon" jdbcType="DECIMAL" property="zrtAchieveAmountMon" />
+    <result column="QTT_achieve_amount_mon" jdbcType="DECIMAL" property="qttAchieveAmountMon" />
+    <result column="pub_issue_amount_week" jdbcType="DECIMAL" property="pubIssueAmountWeek" />
+    <result column="pub_cur_issue_amount_week" jdbcType="DECIMAL" property="pubCurIssueAmountWeek" />
+    <result column="pub_noncur_issue_amount_week" jdbcType="DECIMAL" property="pubNoncurIssueAmountWeek" />
+    <result column="pri_issue_amount_week" jdbcType="DECIMAL" property="priIssueAmountWeek" />
+    <result column="credit_issue_amount_week" jdbcType="DECIMAL" property="creditIssueAmountWeek" />
+    <result column="securities_issue_amount_week" jdbcType="DECIMAL" property="securitiesIssueAmountWeek" />
+    <result column="equity_issue_amount_week" jdbcType="DECIMAL" property="equityIssueAmountWeek" />
+    <result column="overseas_issue_amount_week" jdbcType="DECIMAL" property="overseasIssueAmountWeek" />
+    <result column="other_issue_amount_week" jdbcType="DECIMAL" property="otherIssueAmountWeek" />
+    <result column="fixed_income_issue_amount_week" jdbcType="DECIMAL" property="fixedIncomeIssueAmountWeek" />
+    <result column="cash_issue_amount_week" jdbcType="DECIMAL" property="cashIssueAmountWeek" />
+    <result column="jjs_issue_amount_week" jdbcType="DECIMAL" property="jjsIssueAmountWeek" />
+    <result column="foreign_trust_fund _issue_amount_week" jdbcType="DECIMAL" property="foreignTrustFundIssueAmountWeek" />
+    <result column="ZRT_issue_amount_week" jdbcType="DECIMAL" property="zrtIssueAmountWeek" />
+    <result column="QTT_issue_amount_week" jdbcType="DECIMAL" property="qttIssueAmountWeek" />
+    <result column="pub_achieve_amount_week" jdbcType="DECIMAL" property="pubAchieveAmountWeek" />
+    <result column="pub_cur_achieve_amount_week" jdbcType="DECIMAL" property="pubCurAchieveAmountWeek" />
+    <result column="pub_noncur_achieve_amount_week" jdbcType="DECIMAL" property="pubNoncurAchieveAmountWeek" />
+    <result column="pri_achieve_amount_week" jdbcType="DECIMAL" property="priAchieveAmountWeek" />
+    <result column="credit_achieve_amount_week" jdbcType="DECIMAL" property="creditAchieveAmountWeek" />
+    <result column="securities_achieve_amount_week" jdbcType="DECIMAL" property="securitiesAchieveAmountWeek" />
+    <result column="equity_achieve_amount_week" jdbcType="DECIMAL" property="equityAchieveAmountWeek" />
+    <result column="overseas_achieve_amount_week" jdbcType="DECIMAL" property="overseasAchieveAmountWeek" />
+    <result column="other_achieve_amount_week" jdbcType="DECIMAL" property="otherAchieveAmountWeek" />
+    <result column="fixed_income_achieve_amount_week" jdbcType="DECIMAL" property="fixedIncomeAchieveAmountWeek" />
+    <result column="cash_achieve_amount_week" jdbcType="DECIMAL" property="cashAchieveAmountWeek" />
+    <result column="jjs_achieve_amount_week" jdbcType="DECIMAL" property="jjsAchieveAmountWeek" />
+    <result column="foreign_trust_fund _achieve_amount_week" jdbcType="DECIMAL" property="foreignTrustFundAchieveAmountWeek" />
+    <result column="ZRT_achieve_amount_week" jdbcType="DECIMAL" property="zrtAchieveAmountWeek" />
+    <result column="QTT_achieve_amount_week" jdbcType="DECIMAL" property="qttAchieveAmountWeek" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, dt, acc_level1_dept_name, check_num, achieved_num, delivery_rate, 1-6mo_check_num, 
+    1-6mo_achieved_num, 1-6mo_delivery_rate, 7-12mo_check_num, 7-12mo_achieved_num, 7-12mo_delivery_rate, 
+    13-18mo_check_num, 13-18mo_achieved_num, 13-18mo_delivery_rate, 19-24mo_check_num, 
+    19-24mo_achieved_num, 19-24mo_delivery_rate, 25-36mo_check_num, 25-36mo_achieved_num, 
+    25-36mo_delivery_rate, 37-60mo_check_num, 37-60mo_achieved_num, 37-60mo_delivery_rate, 
+    60mo_up_check_num, 60mo_qup_achieved_num, 60mo_up_delivery_rate, new_emp_num, new_emp_achieved_num, 
+    `new_emp_Delivery rate`, 1-3mo_new_emp_num, 1-3mo_new_emp_achieved_num, 1-3mo_new_emp_delivery_rate, 
+    4-6mo_new_emp_num, 4-6mo_new_emp_achieved_num, 4-6mo_new_emp_delivery_rate, 7-9mo_new_emp_num, 
+    7-9mo_new_emp_achieved_num, 7-9mo_new_emp_delivery_rate, 10-12mo_new_emp_num, 10-12mo_new_emp_achieved_num, 
+    10-12mo_new_emp_delivery_rate, age_goal_achieved_num, age_goal_rate, 1-12mo_age_goal_achieved_num, 
+    1-12mo_age_goal_rate, 13-24mo_age_goal_achieved_num, 13-24mo_age_goal_rate, 25-36mo_age_goal_achieved_num, 
+    25-36mo_age_goal_rate, 37-60mo_age_goal_achieved_num, 37-60mo_age_goal_rate, 60mo_up_age_goal_achieved_num, 
+    60mo_up_age_goal_rate, manage_emp_check_num, manage_emp_achieved_num, manage_emp_age_goal_rate, 
+    elite_emp_achieved_num, elite_emp_rate, tail_emp_achieved_num, tail_emp_rate, mass_emp_achieved_num, 
+    mass_emp_rate, manage_emp_cadres_achieved_num, manage_emp_cadres_rate, pri_achieved_num, 
+    pri_delivery_rate, pub_achieved_num, pub_delivery_rate, ins_achieved_num, ins_delivery_rate, 
+    policy_amount_achieved_num, policy_amount_delivery_rate, equity_achieve_num, equity_delivery_rate, 
+    pri_equity_achieve_num, pri_equity_delivery_rate, jjs_achieve_num, jjs_delivery_rate, 
+    ljjs_achieve_num, ljjs_delivery_rate, policy_part_num, policy_part_rate, pub_part_num, 
+    pub_part_rate, marketing_emp_front, marketing_emp_background, marketing_emp_mid, 
+    marketing_emp, marketing_new_emp_year, marketing_new_emp_mon, marketing_new_emp_week, 
+    marketing_sep_emp_year, marketing_sep_emp_mon, marketing_sep_emp_week, marketing_net_inc_emp_year, 
+    marketing_net_inc_emp_mon, marketing_new_emp_ord, marketing_new_emp_A, marketing_new_emp_B, 
+    marketing_new_emp_C, marketing_new_emp_S, marketing_new_emp_sis, marketing_new_emp_team, 
+    marketing_new_emp_depart, marketing_new_emp_, trans_num_mon, pri_trans_num_mon, pub_trans_num_mon, 
+    issue_amount_per_emp/mon, policy_amount_year, equity_amount_year, issue_amount_year, 
+    achieve_amount_year, policy_amount_aver_mon, equity_amount_aver_mon, issue_amount_aver_mon, 
+    achieve_amount_aver_mon, policy_amount_mon, equity_amount_mon, issue_amount_mon, 
+    achieve_amount_mon, policy_amount_aver_mon_of_day, equity_amount_aver_mon_of_day, 
+    issue_amount_aver_mon_of_day, achieve_amount_aver_mon_of_day, policy_amount_week, 
+    equity_amount_week, issue_amount_week, achieve_amount_week, policy_amount_aver_week, 
+    equity_amount_aver_week, issue_amount_aver_week, achieve_amount_aver_week, pub_issue_amount_year, 
+    pub_cur_issue_amount_year, pub_noncur_issue_amount_year, pri_issue_amount_year, credit_issue_amount_yeard, 
+    securities_issue_amount_year, equity_issue_amount_year, overseas_issue_amount_year, 
+    other_issue_amount_year, fixed_income_issue_amount_year, cash_issue_amount_year, 
+    jjs_issue_amount_year, `foreign_trust_fund _issue_amount_year`, ZRT_issue_amount_year, 
+    QTT_issue_amount_year, pub_achieve_amount_year, pub_cur_achieve_amount_year, pub_noncur_achieve_amount_year, 
+    pri_achieve_amount_year, credit_achieve_amount_year, securities_achieve_amount_year, 
+    equity_achieve_amount_year, overseas_achieve_amount_year, other_achieve_amount_year, 
+    fixed_income_achieve_amount_year, cash_achieve_amount_year, jjs_achieve_amount_year, 
+    `foreign_trust_fund _achieve_amount_year`, ZRT_achieve_amount_year, QTT_achieve_amount_year, 
+    pub_issue_amount_mon, pub_cur_issue_amount_mon, pub_noncur_issue_amount_mon, pri_issue_amount_mon, 
+    credit_issue_amount_mon, securities_issue_amount_mon, equity_issue_amount_mon, overseas_issue_amount_mon, 
+    other_issue_amount_mon, fixed_income_issue_amount_mon, cash_issue_amount_mon, jjs_issue_amount_mon, 
+    `foreign_trust_fund _issue_amount_mon`, ZRT_issue_amount_mon, QTT_issue_amount_mon, 
+    pub_achieve_amount_mon, pub_cur_achieve_amount_mon, pub_noncur_achieve_amount_mon, 
+    pri_achieve_amount_mon, credit_achieve_amount_mon, securities_achieve_amount_mon, 
+    equity_achieve_amount_mon, overseas_achieve_amount_mon, other_achieve_amount_mon, 
+    fixed_income_achieve_amount_mon, cash_achieve_amount_mon, jjs_achieve_amount_mon, 
+    `foreign_trust_fund _achieve_amount_mon`, ZRT_achieve_amount_mon, QTT_achieve_amount_mon, 
+    pub_issue_amount_week, pub_cur_issue_amount_week, pub_noncur_issue_amount_week, pri_issue_amount_week, 
+    credit_issue_amount_week, securities_issue_amount_week, equity_issue_amount_week, 
+    overseas_issue_amount_week, other_issue_amount_week, fixed_income_issue_amount_week, 
+    cash_issue_amount_week, jjs_issue_amount_week, `foreign_trust_fund _issue_amount_week`, 
+    ZRT_issue_amount_week, QTT_issue_amount_week, pub_achieve_amount_week, pub_cur_achieve_amount_week, 
+    pub_noncur_achieve_amount_week, pri_achieve_amount_week, credit_achieve_amount_week, 
+    securities_achieve_amount_week, equity_achieve_amount_week, overseas_achieve_amount_week, 
+    other_achieve_amount_week, fixed_income_achieve_amount_week, cash_achieve_amount_week, 
+    jjs_achieve_amount_week, `foreign_trust_fund _achieve_amount_week`, ZRT_achieve_amount_week, 
+    QTT_achieve_amount_week
+  </sql>
+</mapper>
